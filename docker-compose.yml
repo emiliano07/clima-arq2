@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  app:
+    image: clima
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        source: .
+        target: /usr/src/app
